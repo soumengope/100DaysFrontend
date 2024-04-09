@@ -8,6 +8,32 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>100 days challenge </h1>
+   <header>
+    <h1>Password Generator</h1>
+   </header>
+   <main>
+    <section>
+        <h3>Description</h3>
+        <p>A Random password generator using a slider, Password Length will
+            vary according to the slider value, In this app the slider value
+            will be in the range of 1 to 10. Whenever you click generator button 
+            it will create unique password everytime acoording to slider range 
+            value .
+        </p>
+    </section>
+    <section>
+        Password Range : <input type="range" class="rangeVal" name="rangeVal"
+        min="0" max="10" step="1" value="0">
+        <span class="rangeVal_show">0</span>
+
+        <div class="passGen">
+            <button class="passGenBtn">Generate Password</button>
+        </div>
+
+        <div class="showPass">
+            <h5>Randome password will show here</h5>
+        </div>
+    </section>
+   </main>
 </body>
 </html>
