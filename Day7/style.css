@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main{
+    position:relative;
+}
+.main_nav{
+    display:none;
+}
+
+@keyframes aAlim {
+    0%{opacity:0;}
+    90%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes insetAlim {
+    from{inset: 0 0 0 100%;}
+    to{inset: 0 0 0 0%;}
+}
+@keyframes RaAlim {
+    100%{opacity:1;}
+    10%{opacity:1;}
+    0%{opacity:0;}
+}
+@keyframes RinsetAlim {
+    from{inset: 0 0 0 0%;}
+    to{inset: 0 0 0 100%;}
+}
+.main_nav div + div{
+    margin-top:1rem;
+}
+.main_nav a{
+    text-decoration: none;
+    color:black;
+}
+.opening, .closing{
+    font-size: 1.2rem;
+    cursor:pointer;
+    margin-bottom: 2rem;
+    color:blue;
+    padding:1rem;
+}
+.closing{
+    display:none;
+}
+
+@media (min-width:900px){
+    .opening, .closing{
+        display: none;
+    }
+    .main_nav{
+        display:flex;
+        justify-content: center;
+        gap:2rem;
+    }
+    .main_nav div + div{
+        margin-top:unset;
+    }
+}
