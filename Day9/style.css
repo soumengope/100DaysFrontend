@@ -14,22 +14,23 @@ body{
     margin-top:1rem;
     margin-bottom: 0.2rem;
     padding:1rem;
-    background-color: black;
+    background-color: rgb(61, 60, 60);
     color:white;
     text-align: right;
-    font-size:1.2rem;
+    font-size:1.1rem;
     font-weight: 600;
     overflow-x: hidden;
     text-overflow:ellipsis;
     height:80px;
+    box-shadow: inset 3px 3px 10px  black;
 }
 .main_input{
     margin:0 auto;
-    background:black;
+    background:rgb(90, 89, 89);
     display:grid;
     grid-template-columns: repeat(1,1fr);
     gap:2rem;
-    padding:1rem;
+    padding:1.5rem 1rem;
 }
 .second_div{
     display:flex;
@@ -44,6 +45,10 @@ body{
     cursor: pointer;
     font-size:1.1rem;
     font-weight:800;
+}
+.bot_div{
+    width:20px;
+    height:20px;
 }
 
 @media (max-width:900px){
