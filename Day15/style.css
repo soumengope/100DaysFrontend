@@ -1,0 +1,258 @@
+body{
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+.main_header{
+    padding:0.5rem 2rem;
+    border-bottom: 1px solid black;
+    display:flex;
+    flex-direction: column;
+}
+.header_name{
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    padding:0.5rem 0rem;
+}
+nav{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    padding:1rem 0rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:rgb(30, 163, 163);
+}
+nav a{
+    text-decoration: none;
+    color:unset;
+}
+
+.contact_logos{
+    display:flex;
+    gap:1.5rem;
+    justify-content: center;
+    padding-top:1rem;
+    justify-items: center;
+}
+.contact_logos a{
+    text-decoration: none;
+    color:unset;
+}
+
+.main_intro{
+    padding:2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.left_side{
+    padding-top:1rem;
+}
+.left_side img{
+    width:100%;
+}
+.right_side{
+    padding-top:1rem;
+}
+.right_side h1{
+    font-size:1.2rem;
+}
+.right_side p{
+    padding-top:0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+.contacts{
+    display:flex;
+    gap:1.5rem;
+    padding:1rem 0rem;
+}
+.contacts button{
+    padding:0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.skills_header{
+    font-size:1.2rem;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.main_skills{
+    padding:1rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:1rem;
+}
+.main_skills > div{
+    width:100%;
+    height:40px;
+    background:rgb(33, 41, 68);
+    border-radius: 20px;
+}
+.main_skills > div > div{
+    height:35px;
+    background-color: white;
+    margin-top:0.125rem;
+    margin-left:0.2rem;
+    border-radius: 20px;
+}
+.eight{
+    width:80%;
+}
+.seven{
+    width:70%;
+}
+.six{
+    width:60%;
+}
+.five{
+    width:50%;
+}
+.main_skills p{
+    padding-top:0.5rem;
+    padding-left:0.5rem;
+    font-size:1.1rem;
+}
+
+.projects_header{
+    font-size:1.2rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    padding-top:2rem;
+}
+.projects_main{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    padding-top:1rem;
+}
+.projectLists{
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:1px 1px 3px 0px rgb(33, 41, 68);
+    padding:1rem 0.5rem;
+    width:90%;
+    margin:0 auto;
+}
+.img_proj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectLists > div >  img{
+    width:80%;
+}
+.projectLists p{
+    padding-top:0.5rem;
+    font-size:1.1rem;
+    font-weight: 600;
+    padding-bottom:1rem;
+}
+.projectLists a{
+    text-decoration: none;
+    color:unset;
+    font-size: 1.1rem;
+    cursor:pointer;
+    background-color: rgb(67, 175, 175);
+    color:white;
+    padding:0.4rem;
+    margin-top:2rem;
+}
+
+.contacts_header{
+    font-size:1.2rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    padding-top:2rem;
+}
+.contacts{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{
+    padding:1rem 0.5rem;
+    margin-top:2rem;
+    text-align:center;
+}
+
+@media (min-width:750px) {
+    .main_header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav{
+        flex-direction: row;
+        text-align:unset;
+    }
+    .contact_logos{
+        justify-content: flex-end;
+        padding-right:2rem;
+    }
+    .main_intro{
+        flex-direction: row;
+        padding:1rem;
+        padding-top:2rem;
+        gap:1rem;
+    }
+    .right_side{
+        padding:1rem;
+        padding-top:2rem;
+        margin-top:5rem;
+    }
+    .right_side p{
+        padding-top:1.5rem;
+    }
+    .contacts{
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-top:1.5rem;
+    }
+    .main_skills > div > div{
+        background-color: rgb(67, 175, 175);
+        color:white;
+    }
+    .skills_header{
+        padding-top:2rem;
+    }
+    button{
+        background-color: rgb(67, 175, 175);
+        color:white;
+        outline: none;
+        border: none;
+        cursor:pointer;
+    }
+    .main_skills{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main_projects{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .projectLists p{
+        padding-top: 1.5rem;
+    }
+    .contacts{
+        flex-direction: row;
+        justify-content: center;
+        gap:2rem;
+    }
+    footer{
+        border-top: 1px solid black;
+    }
+    .projectLists > div >  img{
+        width:80%;
+        height:280px;
+    }
+    .contact_logos{
+        gap:2.5rem;
+    }
+}
